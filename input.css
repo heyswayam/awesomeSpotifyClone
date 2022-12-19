@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  @layer utilities {
+    .f-spotify-1 {
+        font-family: 'Nunito', sans-serif;
+      }
+      .f-spotify-2 {
+          font-family: 'Rubik Glitch', cursive;
+      }
+    .home{
+        color: antiquewhite;
+
+    }
+  }
