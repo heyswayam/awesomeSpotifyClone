@@ -11,14 +11,14 @@ let divOfPlayPause = document.getElementById('divOfPlayPause')
 let songIndex = 0
 let totalSongs= Array.from(playnPause).length
 let songItem = Array.from(document.querySelectorAll('.songItem'))
-// let songs = [
-//     { songName: "Levitating", artistName:"Dua Lipa", filePath: "songs/1.mp3", coverPath: "assets/covers/duaLipa.png" },
-//     { songName: "Boyfriend", artistName:"Dove Camin", filePath: "songs/2.mp3", coverPath: "assets/covers/boyfriend.jpg" },
-//     { songName: "One Dance", artistName:"Drake ft.Wiz", filePath: "songs/3.mp3", coverPath: "assets/covers/oneDance.png" },
-//     { songName: "Pepas remix", artistName:"Farruko", filePath: "songs/4.mp3", coverPath: "assets/covers/pepas.jpg" },
-//     { songName: "Starboy", artistName:"The Weeknd", filePath: "songs/5.mp3", coverPath: "assets/covers/weeknd.jpg" },
+let songs = [
+    { songName: "Levitating", artistName:"Dua Lipa", filePath: "songs/1.mp3", coverPath: "assets/covers/duaLipa.png" },
+    { songName: "Boyfriend", artistName:"Dove Camin", filePath: "songs/2.mp3", coverPath: "assets/covers/boyfriend.jpg" },
+    { songName: "One Dance", artistName:"Drake ft.Wiz", filePath: "songs/3.mp3", coverPath: "assets/covers/oneDance.png" },
+    { songName: "Pepas remix", artistName:"Farruko", filePath: "songs/4.mp3", coverPath: "assets/covers/pepas.jpg" },
+    { songName: "Starboy", artistName:"The Weeknd", filePath: "songs/5.mp3", coverPath: "assets/covers/weeknd.jpg" },
 
-// ]
+]
 const makeAllPlay = () => {
     Array.from(playnPause).forEach((element) => {
         element.classList.remove("fa-pause")
@@ -36,12 +36,12 @@ Array.from(document.getElementsByClassName("songItem")).forEach((element)=>{
 })
 Array.from(document.getElementsByClassName("songItem"))[songIndex].classList.add("bg-white/[0.15]")
 }
-// songItem.forEach((element, i) => {
-//     element.querySelector(".slno").innerText = i + 1
-//     element.querySelector(".songName").innerHTML = songs[i].songName
-//     element.querySelector(".artistName").innerHTML = songs[i].artistName
-//     element.querySelector(".coverPath").src = songs[i].coverPath
-// });
+songItem.forEach((element, i) => {
+    element.querySelector(".slno").innerText = i + 1
+    element.querySelector(".songName").innerHTML = songs[i].songName
+    element.querySelector(".artistName").innerHTML = songs[i].artistName
+    element.querySelector(".coverPath").src = songs[i].coverPath
+});
 
 // Listening events
 masterPlay.addEventListener('click', () => {
