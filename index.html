@@ -10,142 +10,169 @@
     <link rel="preconnect" href="/https://fonts.gstatic.com" crossorigin>
     <link href="/https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
     <!--  -->
-    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="/assets/favicon.ico" />--
     <link rel="stylesheet" href="/input.css">
     <link rel="stylesheet" href="/app.css">
     <title>Spotify</title>
 </head>
 
-<body class="bg-black">
-    <div class="navigation">
-        <ul class="flex items-center justify-between">
-            <li class="spotify cursor-pointer hover:scale-105 transition-all w-fit p-3 text-lg f-spotify-1 flex">
-                <img class="h-11 md:hidden" src="assets/spotify.png" alt="spotify">
-                <img class="hidden md:block" alt="spotify">
-            </li>
-            <li
-                class="text-gray-400 flex justify-center items-center hover:text-lg cursor-pointer hover:text-white transition-all">
-                <i class="fa-solid fa-house"></i>
-                <p class="mx-2">Home </p>
-            </li>
-            <li
-                class="text-gray-400 flex justify-center items-center hover:text-lg cursor-pointer hover:text-white transition-all">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <p class="mx-2">Search </p>
-            </li>
-            <li
-                class="text-gray-400 flex justify-center items-center hover:text-lg cursor-pointer hover:text-white transition-all">
-                <i class="fa-solid fa-layer-group"></i>
-                <p class="mx-2">Library</p>
-            </li>
-        </ul>
-    </div>
-    <div class="cardList grid grid-rows-2 grid-cols-2 gap-3 mx-3 my-5">
-        <div
-            class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
-            <img class="rounded-md h-20" src="assets/covers/LikedSongs.png" alt="playlists">
-            <p class="text-white m-auto text-xs">Liked Songs</p>
+<body class=" bg-black max-w-md flex-col mx-auto">
+
+        <div class="navigation">
+            <ul class="flex items-center justify-between">
+                <li class="spotify cursor-pointer hover:scale-105 transition-all w-fit  text-lg f-spotify-1 flex">
+                    <img class="h-11 mx-2" src="assets/spotify.png" alt="spotify">
+                    <img class="hidden md:block" alt="spotify">
+                </li>
+                <li
+                    class="text-gray-400 flex justify-center items-center hover:text-lg cursor-pointer hover:text-white transition-all">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="mx-2">Home </p>
+                </li>
+                <li
+                    class="text-gray-400 flex justify-center items-center hover:text-lg cursor-pointer hover:text-white transition-all">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p class="mx-2">Search </p>
+                </li>
+                <li
+                    class="text-gray-400 flex justify-center items-center hover:text-lg cursor-pointer hover:text-white transition-all">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <p class="mx-2">Library</p>
+                </li>
+            </ul>
         </div>
-        <div
-            class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
-            <img class="rounded-md h-20" src="assets/covers/DailyMixWeeknd.png" alt="playlists">
-            <p class="text-white m-auto text-xs">Daily Mix 2</p>
+        <div class="cardList grid grid-rows-2 grid-cols-2 gap-3 mx-3 my-5">
+            <div
+                class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
+                <img class="rounded-md h-20" src="assets/covers/LikedSongs.png" alt="playlists">
+                <p class="text-white m-auto text-xs">Liked Songs</p>
+            </div>
+            <div
+                class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
+                <img class="rounded-md h-20" src="assets/covers/DailyMixWeeknd.png" alt="playlists">
+                <p class="text-white m-auto text-xs">Daily Mix 2</p>
+            </div>
+            <div
+                class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
+                <img class="rounded-md h-20" src="assets/covers/DailyMixRed.png" alt="playlists">
+                <p class="text-white m-auto text-xs">Daily Mix 3</p>
+            </div>
+            <div
+                class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
+                <img class="rounded-md h-20" src="assets/covers/DailyMixBTS.png" alt="playlists">
+                <p class="text-white m-auto text-xs">Daily Mix 5</p>
+            </div>
+            <div
+                class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
+                <img class="rounded-md h-20" src="assets/covers/MegaHitMix.png" alt="playlists">
+                <p class="text-white m-auto text-xs">Mega Hit Mix</p>
+            </div>
+            <div
+                class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
+                <img class="rounded-md h-20" src="assets/covers/RemixDeck.png" alt="playlists">
+                <p class="text-white m-auto text-xs">Remix Deck</p>
+            </div>
+
         </div>
-        <div
-            class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
-            <img class="rounded-md h-20" src="assets/covers/DailyMixRed.png" alt="playlists">
-            <p class="text-white m-auto text-xs">Daily Mix 3</p>
-        </div>
-        <div
-            class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
-            <img class="rounded-md h-20" src="assets/covers/DailyMixBTS.png" alt="playlists">
-            <p class="text-white m-auto text-xs">Daily Mix 5</p>
-        </div>
-        <div
-            class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
-            <img class="rounded-md h-20" src="assets/covers/MegaHitMix.png" alt="playlists">
-            <p class="text-white m-auto text-xs">Mega Hit Mix</p>
-        </div>
-        <div
-            class="card cursor-pointer flex items-center h-20 bg-slate-400/[0.2] hover:bg-white/20 transition-all duration-300 rounded-md ">
-            <img class="rounded-md h-20" src="assets/covers/RemixDeck.png" alt="playlists">
-            <p class="text-white m-auto text-xs">Remix Deck</p>
+        <hr class="w-[94%] border-white/40 mx-auto">
+        <div class="songLists">
+            <div
+                class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
+                <div class="w-3">
+                    <span
+                        class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
+                    <span id="divOfPlayPause"
+                        class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
+                        <i class="playnPause fa-solid fa-play"></i>
+                    </span>
+                </div>
+                <img class="coverPath h-16 w-16 p-1" src="" alt="">
+                <span class="songName">Levitating</span>
+                <span
+                    class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua
+                    Lipa</span>
+                <span class="songDuration text-gray-400"> 3:29 </span>
+            </div>
+            <div
+                class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
+                <div class="w-3">
+                    <span
+                        class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
+                    <span id="divOfPlayPause"
+                        class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
+                        <i class="playnPause fa-solid fa-play"></i>
+                    </span>
+                </div>
+                <img class="coverPath h-16 w-16 p-1" src="" alt="">
+                <span class="songName">Levitating</span>
+                <span
+                    class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua
+                    Lipa</span>
+                <span class="songDuration text-gray-400"> 3:29 </span>
+            </div>
+            <div
+                class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
+                <div class="w-3">
+                    <span
+                        class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
+                    <span id="divOfPlayPause"
+                        class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
+                        <i class="playnPause fa-solid fa-play"></i>
+                    </span>
+                </div>
+                <img class="coverPath h-16 w-16 p-1" src="" alt="">
+                <span class="songName">Levitating</span>
+                <span
+                    class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua
+                    Lipa</span>
+                <span class="songDuration text-gray-400"> 3:29 </span>
+            </div>
+            <div
+                class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
+                <div class="w-3">
+                    <span
+                        class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
+                    <span id="divOfPlayPause"
+                        class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
+                        <i class="playnPause fa-solid fa-play"></i>
+                    </span>
+                </div>
+                <img class="coverPath h-16 w-16 p-1" src="" alt="">
+                <span class="songName">Levitating</span>
+                <span
+                    class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua
+                    Lipa</span>
+                <span class="songDuration text-gray-400"> 3:29 </span>
+            </div>
+            <div
+                class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
+                <div class="w-3">
+                    <span
+                        class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
+                    <span id="divOfPlayPause"
+                        class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
+                        <i class="playnPause fa-solid fa-play"></i>
+                    </span>
+                </div>
+                <img class="coverPath h-16 w-16 p-1" src="" alt="">
+                <span class="songName">Levitating</span>
+                <span
+                    class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua
+                    Lipa</span>
+                <span class="songDuration text-gray-400"> 3:29 </span>
+            </div>
         </div>
 
-    </div>
-    <hr class="w-[94%] border-white/40 mx-auto">
-    <div class="songLists">
-        <div class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
-            <div class="w-3">
-                <span class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
-                <span id="divOfPlayPause" class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
-                    <i class="playnPause fa-solid fa-play"></i>
-                </span>
+        <div
+            class="playMenu sticky bottom-0 w-full h-20  bg-black/50 backdrop-blur-sm flex flex-col items-center justify-evenly">
+            <input type="range" name="playback" id="playback" min="0" max="100" class="mx-auto border block w-3/4">
+            <p id="songLength" class="text-white"></p>
+            <div class="playbackControl -translate-x-2 -translate-y-2 w-1/6 flex gap-3 justify-between">
+                <i id="prev" class="previous text-white fa-solid fa-backward-step fa-xl cursor-pointer"></i>
+                <i id="masterPlay" class="text-white fa-solid fa-circle-play fa-2xl cursor-pointer"></i>
+                <i id="next" class=" text-white fa-solid fa-forward-step fa-xl cursor-pointer"></i>
             </div>
-            <img class="coverPath h-16 w-16 p-1" src="" alt="">
-            <span class="songName">Levitating</span>
-            <span class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua Lipa</span>
-            <span class="songDuration text-gray-400"> 3:29 </span>
         </div>
-        <div class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
-            <div class="w-3">
-                <span class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
-                <span id="divOfPlayPause" class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
-                    <i class="playnPause fa-solid fa-play"></i>
-                </span>
-            </div>
-            <img class="coverPath h-16 w-16 p-1" src="" alt="">
-            <span class="songName">Levitating</span>
-            <span class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua Lipa</span>
-            <span class="songDuration text-gray-400"> 3:29 </span>
-        </div>
-        <div class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
-            <div class="w-3">
-                <span class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
-                <span id="divOfPlayPause" class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
-                    <i class="playnPause fa-solid fa-play"></i>
-                </span>
-            </div>
-            <img class="coverPath h-16 w-16 p-1" src="" alt="">
-            <span class="songName">Levitating</span>
-            <span class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua Lipa</span>
-            <span class="songDuration text-gray-400"> 3:29 </span>
-        </div>
-        <div class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
-            <div class="w-3">
-                <span class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
-                <span id="divOfPlayPause" class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
-                    <i class="playnPause fa-solid fa-play"></i>
-                </span>
-            </div>
-            <img class="coverPath h-16 w-16 p-1" src="" alt="">
-            <span class="songName">Levitating</span>
-            <span class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua Lipa</span>
-            <span class="songDuration text-gray-400"> 3:29 </span>
-        </div>
-        <div class="songItem cursor-pointer text-white hover:bg-white/[0.15] active:bg-white/[0.15] text-xs group/songItem  m-3 px-3 flex justify-between items-center rounded-md transition-all">
-            <div class="w-3">
-                <span class="slno group-hover/songItem:hidden group-active/songItem:hidden transition-all duration-500">1</span>
-                <span id="divOfPlayPause" class="hidden group-hover/songItem:block group-active/songItem:block transition-all duration-500">
-                    <i class="playnPause fa-solid fa-play"></i>
-                </span>
-            </div>
-            <img class="coverPath h-16 w-16 p-1" src="" alt="">
-            <span class="songName">Levitating</span>
-            <span class="artistName text-gray-400 group-hover/songItem:text-white group-active/songItem:text-white transition-all">Dua Lipa</span>
-            <span class="songDuration text-gray-400"> 3:29 </span>
-        </div>
-    </div>
-
-    <div class="playMenu sticky bottom-0 w-full h-20  bg-black/50 backdrop-blur-sm flex flex-col items-center justify-evenly">
-        <input type="range" name="playback" id="playback" min="0" max="100" class="mx-auto border block w-3/4">
-        <p id="songLength" class="text-white"></p>
-        <div class="playbackControl -translate-x-2 -translate-y-2 w-1/6 flex gap-3 justify-between">
-            <i id="prev" class="previous text-white fa-solid fa-backward-step fa-xl cursor-pointer"></i>
-            <i id="masterPlay" class="text-white fa-solid fa-circle-play fa-2xl cursor-pointer"></i>
-            <i id="next" class=" text-white fa-solid fa-forward-step fa-xl cursor-pointer"></i>
-        </div>
-    </div>
 
 
 
